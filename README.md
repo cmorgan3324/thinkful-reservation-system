@@ -1,10 +1,8 @@
 Description
-For this project, I created an application for restaurants to allows users to create, update, view, delete reservations, as well as seat them at various tables within the restaurant.
+I created a restaurant reservation system for restaurants to allow users to create, update, view, and delete reservations. With this application, users can also seat them at various tables within the restaurant.
 
 Technologies & Tools
  React
- React hooks
- React router
  Node
  Postgres
  Express
@@ -13,7 +11,9 @@ Technologies & Tools
  HTML
  JavaScript
  RESTful APIs
+ DBeaver
+ 
 Run Locally
- Fork & Clone the repostory
+ Fork & Clone the repository
  Run npm install
  Run npm run start:dev to start
