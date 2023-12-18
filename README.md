@@ -16,8 +16,8 @@ http://localhost:5001
 * Description: Retrieves all existing reservations.
 * Endpoint: GET /reservations
 * Parameters:
-** params: Query parameters to filter reservations.
-- signal: AbortController signal.
+  * params: Query parameters to filter reservations.
+  * signal: AbortController signal.
 * Returns: A promise resolving to an array of reservations.
 
 `createReservation(reservation, signal)`
