@@ -4,6 +4,9 @@
 
 https://thinkful-restaurant-reservation-system-qegg.onrender.com/
 
+## Description
+I created a restaurant reservation system for restaurants to allow users to create, find, view, update, and cancel reservations.  With this application, users can also seat them at various tables within the restaurant.
+
 ## API Documentation
 This documentation provides an overview of the available endpoints and functionalities provided by the API module in the project.
 
@@ -21,72 +24,69 @@ http://localhost:5001
 * Returns: A promise resolving to an array of reservations.
 
 `createReservation(reservation, signal)`
-Description: Creates a new reservation.
-Endpoint: POST /reservations
-Parameters:
-reservation: Reservation data to be created.
-signal: AbortController signal.
+* Description: Creates a new reservation.
+* Endpoint: POST /reservations
+* Parameters:
+  * reservation: Reservation data to be created.
+  * signal: AbortController signal.
 Returns: A promise resolving to the created reservation data.
 
 `createTable(table, signal)`
-Description: Creates a new table.
-Endpoint: POST /tables
-Parameters:
-table: Table data to be created.
-signal: AbortController signal.
-Returns: A promise resolving to the created table data.
+* Description: Creates a new table.
+* Endpoint: POST /tables
+* Parameters:
+  * table: Table data to be created.
+  * signal: AbortController signal.
+* Returns: A promise resolving to the created table data.
 
 `listTables(signal)`
-Description: Retrieves all existing tables.
-Endpoint: GET /tables
-Parameters:
-signal: AbortController signal.
-Returns: A promise resolving to an array of tables.
+* Description: Retrieves all existing tables.
+* Endpoint: GET /tables
+* Parameters:
+  * signal: AbortController signal.
+* Returns: A promise resolving to an array of tables.
 
 `seatReservation(table_id, reservation_id, signal)`
-Description: Seats a reservation at a table.
-Endpoint: PUT /tables/:table_id/seat
-Parameters:
-table_id: ID of the table.
-reservation_id: ID of the reservation to be seated.
-signal: AbortController signal.
-Returns: A promise resolving to the updated table data.
+* Description: Seats a reservation at a table.
+* Endpoint: PUT /tables/:table_id/seat
+* Parameters:
+  * table_id: ID of the table.
+  * reservation_id: ID of the reservation to be seated.
+  * signal: AbortController signal.
+* Returns: A promise resolving to the updated table data.
 
 `unassignTable(table_id, reservation_id, signal)`
-Description: Finishes a reservation that has been seated.
-Endpoint: DELETE /tables/:table_id/seat
-Parameters:
-table_id: ID of the table.
-reservation_id: ID of the reservation to be unassigned.
-signal: AbortController signal.
-Returns: A promise resolving to null on successful completion.
+* Description: Finishes a reservation that has been seated.
+* Endpoint: DELETE /tables/:table_id/seat
+* Parameters:
+  * table_id: ID of the table.
+  * reservation_id: ID of the reservation to be unassigned.
+  * signal: AbortController signal.
+* Returns: A promise resolving to null on successful completion.
 
 `cancelReservation(reservation_id)`
-Description: Cancels a reservation.
-Endpoint: PUT /reservations/:reservation_id/status
-Parameters:
-reservation_id: ID of the reservation to be canceled.
-Returns: A promise resolving to null on successful cancellation.
+* Description: Cancels a reservation.
+* Endpoint: PUT /reservations/:reservation_id/status
+* Parameters:
+  * reservation_id: ID of the reservation to be canceled.
+* Returns: A promise resolving to null on successful cancellation.
 
 `findReservation(reservation_id, signal)`
-Description: Finds a reservation by its ID.
-Endpoint: GET /reservations/:reservation_id
-Parameters:
-reservation_id: ID of the reservation to be found.
-signal: AbortController signal.
-Returns: A promise resolving to the found reservation data.
+* Description: Finds a reservation by its ID.
+* Endpoint: GET /reservations/:reservation_id
+* Parameters:
+  * reservation_id: ID of the reservation to be found.
+  * signal: AbortController signal.
+* Returns: A promise resolving to the found reservation data.
 
 `modifyReservation(id, res, signal)`
-Description: Updates reservation information.
-Endpoint: PUT /reservations/:id
-Parameters:
-id: ID of the reservation to be modified.
-res: Updated reservation data.
-signal: AbortController signal.
-Returns: A promise resolving to the modified reservation data.
-
-## Description
-I created a restaurant reservation system for restaurants to allow users to create, update, view, and delete reservations. With this application, users can also seat them at various tables within the restaurant.
+* Description: Updates reservation information.
+* Endpoint: PUT /reservations/:id
+* Parameters:
+  * id: ID of the reservation to be modified.
+  * res: Updated reservation data.
+  * signal: AbortController signal.
+* Returns: A promise resolving to the modified reservation data.
 
 ## Technologies & Tools
  * React
