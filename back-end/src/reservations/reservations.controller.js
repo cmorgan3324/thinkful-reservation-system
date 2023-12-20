@@ -49,6 +49,13 @@ function isValidReservation(req, res, next) {
       });
     }
 
+    if (field === "mobile_number") {
+      // Checks if mobile number contains any letters
+      if (/[a-zA-Z]/.test(reservation[field])) {
+        return next({ status: 400, message: `${field} is not a valid number.` });
+      }
+    }
+
     if (field === "reservation_date" && !Date.parse(reservation[field])) {
       return next({ status: 400, message: `${field} is not a valid date.` });
     }
