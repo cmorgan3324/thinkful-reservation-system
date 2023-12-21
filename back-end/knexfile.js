@@ -2,11 +2,6 @@
  * Knex configuration file.
  *
  * You will not need to make changes to this file.
- * DATABASE_URL = "postgresql://postgres@localhost/postgres",
- * DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
- * DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
- * DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
-
  */
 
 require('dotenv').config();
