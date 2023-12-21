@@ -2,17 +2,24 @@
  * Knex configuration file.
  *
  * You will not need to make changes to this file.
+ * DATABASE_URL = "postgresql://postgres@localhost/postgres",
+ * DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
+ * DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
+ * DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
+
  */
 
 require('dotenv').config();
 const path = require("path");
 
+
+
 const {
-  DATABASE_URL = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
-  DEBUG,
+DATABASE_URL = "postgres://tyhpxxtt:kppwFEbqBW66mdoiwZNI_uwmUgB9OwvP@berry.db.elephantsql.com/tyhpxxtt",
+DATABASE_URL_DEVELOPMENT = "postgres://gjnhmrob:D3GN88IgioUsDiiguwPjBScGpGCP5i8P@berry.db.elephantsql.com/gjnhmrob",
+DATABASE_URL_TEST = "postgres://brxgzbsn:QhGBeFgYjJHFwihc0_2bB2WsP0kVTz2f@berry.db.elephantsql.com/brxgzbsn",
+DATABASE_URL_PREVIEW = "postgres://pmkrpktu:Bc19jFQSpoP2lyApZGNmtz5KJy1Yn7qT@berry.db.elephantsql.com/pmkrpktu",
+DEBUG,
 } = process.env;
 
 module.exports = {
