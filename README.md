@@ -2,7 +2,7 @@
 
 ![us-05-dashboard-finish-button-after](https://github.com/cmorgan3324/thinkful-reservation-system/assets/132379707/831b6e34-503f-490d-9622-219e8619c5cc)
 
-https://thinkful-restaurant-reservation-system-qegg.onrender.com/
+https://restaurant-reservation-system-atni.onrender.com
 
 ## Description
 I created a restaurant reservation system for restaurants to allow users to create, find, view, update, and cancel reservations.  With this application, users can also seat them at various tables within the restaurant.
