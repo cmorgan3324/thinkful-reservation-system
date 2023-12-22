@@ -23,7 +23,7 @@ export default function ReservationTable({
         return res;
       });
       setReservations(updated);
-      history.go(`/dashboard`);
+      history.go(`/dashboard?date=${reservation.reservation_date}`);
     } catch (error) {
       setError(error);
     }
