@@ -42,14 +42,13 @@ export default function ReservationRow({ reservation, cancelRes }) {
         </Link>
       </td>
       <td>
-        <Link
+        <button
           className="btn btn-danger"
           data-reservation-id-cancel={reservation.reservation_id}
           onClick={handleCancel}
-            to="/"
         >
           Cancel
-        </Link>
+        </button>
       </td>
     </tr>
   );
