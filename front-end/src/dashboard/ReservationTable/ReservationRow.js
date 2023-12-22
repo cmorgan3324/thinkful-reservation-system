@@ -49,7 +49,7 @@ export default function ReservationRow({ reservation, cancelRes }) {
             to="/"
         >
           Cancel
-        </link>
+        </Link>
       </td>
     </tr>
   );
